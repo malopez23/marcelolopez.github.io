@@ -1,5 +1,5 @@
 .formacao {
-  background-color: #141414;
+  background-color: #363636;
   padding-bottom: 100px;
   padding-top: 100px;
 }
@@ -118,7 +118,7 @@
   justify-content: space-between;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .formacao {
     padding-top: 10px;
   }
@@ -142,5 +142,4 @@
     position: initial;
     margin-bottom: 10px;
   }
-
 }
