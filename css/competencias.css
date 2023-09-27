@@ -1,0 +1,237 @@
+.competencias {
+  background-color: #141414;
+  padding-bottom: 100px;
+}
+
+.competencias-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  position: relative;
+}
+
+.competencias-container::after {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg)no-repeat center;
+  position: absolute;
+  bottom: -150px;
+  left: -50px;
+}
+
+.competencias .subtitulo {
+  word-break: break-all;
+  max-width: 4ch;
+  margin-bottom: 30px;
+}
+
+.grid-barra {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 100px;
+}
+
+.competencias-barra {
+  width: 200px;
+  height: 30px;
+  /* margin-top: 60px;
+  margin-bottom: 60px; */
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.barra-html {
+  width: 85%;
+  height: 100%;
+  background-color: #70da1c;
+  border-radius: 5px;
+  animation-name: barraHTML;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+}
+.barra-html::after {
+  content: "HTML";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+@keyframes barraHTML {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+.barra-css {
+  height: 100%;
+  width: 85%;
+  background-color: #70da1c;
+  border-radius: 5px;
+  animation-name: barraCSS;
+  animation-duration: 2s;
+}
+.barra-css::after {
+  content: "CSS";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+@keyframes barraCSS {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+.barra-javascript {
+  height: 100%;
+  width: 56%;
+  background-color: #70da1c;
+  border-radius: 5px;
+  animation-name: barraJAVASCRIPT;
+  animation-duration: 2s;
+}
+.barra-javascript::after {
+  content: "JavaScript";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+@keyframes barraJAVASCRIPT {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 56%;
+  }
+}
+
+.barra-bootstrap {
+  height: 100%;
+  width: 64%;
+  background-color: #70da1c;
+  border-radius: 5px;
+  animation-name: barraBOOTSTRAP;
+  animation-duration: 2s;
+}
+.barra-bootstrap::after {
+  content: "Bootstrap";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+@keyframes barraBOOTSTRAP {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 64%;
+  }
+}
+
+.barra-react {
+  height: 100%;
+  width: 26%;
+  background-color: #70da1c;
+  border-radius: 5px;
+  animation-name: barraREACT;
+  animation-duration: 2s;
+}
+.barra-react::after {
+  content: "React";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+@keyframes barraREACT {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 26%;
+  }
+}
+
+.barra-java {
+  height: 100%;
+  width: 73%;
+  background-color: #70da1c;
+  border-radius: 5px;
+  animation-name: barraJAVA;
+  animation-duration: 2s;
+}
+.barra-java::after {
+  content: "Java";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+@keyframes barraJAVA {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 73%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .competencias-container::after {
+    left: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .competencias-container {
+    grid-template-columns: 1fr;
+  }
+
+  .competencias .subtitulo {
+    word-break: normal;
+    color: #ffffff;
+  }
+
+  .grid-barra {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-barra {
+    grid-template-columns: 1fr;
+    justify-self: start;
+    gap: 80px 0;
+    margin-left: 15px
+  }
+
+}
